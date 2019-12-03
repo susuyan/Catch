@@ -14,6 +14,7 @@
 		A1B1C91E239615E40063EE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B1C91D239615E40063EE4A /* Assets.xcassets */; };
 		A1B1C921239615E40063EE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B1C91F239615E40063EE4A /* LaunchScreen.storyboard */; };
 		A1B1C92C239615E40063EE4A /* CatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1C92B239615E40063EE4A /* CatchTests.swift */; };
+		A1B1C93F239616310063EE4A /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1C93E239616310063EE4A /* ExtensionHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,13 @@
 		A1B1C927239615E40063EE4A /* CatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B1C92B239615E40063EE4A /* CatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchTests.swift; sourceTree = "<group>"; };
 		A1B1C92D239615E40063EE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B1C938239616270063EE4A /* SSYCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSYCacheProtocol.swift; sourceTree = "<group>"; };
+		A1B1C939239616270063EE4A /* CacheError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheError.swift; sourceTree = "<group>"; };
+		A1B1C93A239616270063EE4A /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		A1B1C93B239616270063EE4A /* DiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
+		A1B1C93C239616270063EE4A /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A1B1C93D239616270063EE4A /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		A1B1C93E239616310063EE4A /* ExtensionHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 		A1B1C913239615DF0063EE4A /* Catch */ = {
 			isa = PBXGroup;
 			children = (
+				A1B1C937239616180063EE4A /* Utility */,
+				A1B1C9362396160A0063EE4A /* Source */,
 				A1B1C914239615DF0063EE4A /* AppDelegate.swift */,
 				A1B1C916239615DF0063EE4A /* SceneDelegate.swift */,
 				A1B1C918239615DF0063EE4A /* ViewController.swift */,
@@ -97,6 +107,27 @@
 				A1B1C92D239615E40063EE4A /* Info.plist */,
 			);
 			path = CatchTests;
+			sourceTree = "<group>";
+		};
+		A1B1C9362396160A0063EE4A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1C93D239616270063EE4A /* Cache.swift */,
+				A1B1C939239616270063EE4A /* CacheError.swift */,
+				A1B1C93B239616270063EE4A /* DiskCache.swift */,
+				A1B1C93A239616270063EE4A /* MemoryStorage.swift */,
+				A1B1C938239616270063EE4A /* SSYCacheProtocol.swift */,
+				A1B1C93C239616270063EE4A /* Storage.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A1B1C937239616180063EE4A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1C93E239616310063EE4A /* ExtensionHelpers.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B1C919239615DF0063EE4A /* ViewController.swift in Sources */,
+				A1B1C93F239616310063EE4A /* ExtensionHelpers.swift in Sources */,
 				A1B1C915239615DF0063EE4A /* AppDelegate.swift in Sources */,
 				A1B1C917239615DF0063EE4A /* SceneDelegate.swift in Sources */,
 			);
