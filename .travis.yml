@@ -5,7 +5,7 @@ osx_image: xcode11.2
 
 xcode_project: ./Catch.xcodeproj # 项目文件相对于.travis.yml文件的路径
 
-xcode_scheme: CatchTests
+#xcode_scheme: CatchTests
 
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
