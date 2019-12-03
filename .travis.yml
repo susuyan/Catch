@@ -9,4 +9,4 @@ xcode_project: ./Catch.xcodeproj # 项目文件相对于.travis.yml文件的路�
 
 xcode_scheme: UITEST # 你需要集成测试的scheme
 
-xcode_sdk: iphonesimulator10.0 # 模拟器
+xcode_sdk: iphonesimulator13.2 # 模拟器
