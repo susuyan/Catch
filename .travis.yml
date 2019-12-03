@@ -7,6 +7,6 @@ osx_image: xcode11.2 # 环境
 # 根据项目类型不同,可以选择两个 key :xcode_project 或者  xcode_workspace
 xcode_project: ./Catch.xcodeproj # 项目文件相对于.travis.yml文件的路径
 
-xcode_scheme: UITEST # 你需要集成测试的scheme
+#xcode_scheme: UITEST # 你需要集成测试的scheme
 
 xcode_sdk: iphonesimulator13.2 # 模拟器
