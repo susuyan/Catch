@@ -74,6 +74,7 @@
 				A1B1C913239615DF0063EE4A /* Catch */,
 				A1B1C92A239615E40063EE4A /* CatchTests */,
 				A1B1C912239615DF0063EE4A /* Products */,
+				A1B1C94023961AFA0063EE4A /* .travis.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +99,6 @@
 				A1B1C91D239615E40063EE4A /* Assets.xcassets */,
 				A1B1C91F239615E40063EE4A /* LaunchScreen.storyboard */,
 				A1B1C922239615E40063EE4A /* Info.plist */,
-				A1B1C94023961AFA0063EE4A /* .travis.yml */,
 			);
 			path = Catch;
 			sourceTree = "<group>";
