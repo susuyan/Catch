@@ -1,14 +1,2 @@
-
 language: swift
-os: osx
 osx_image: xcode11.2
-xcode_project: ./Catch.xcodeproj # 项目文件相对于.travis.yml文件的路径
-xcode_scheme: Catch
-
-xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone X
-
-#xcode_sdk: iphonesimulator13.2 # 模拟器
-
-before_install:
-    brew update
-    # gem install xcpretty -N --no-ri --no-doc
