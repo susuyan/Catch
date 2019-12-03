@@ -1,2 +1,7 @@
 language: swift
 osx_image: xcode11.2
+
+before_install:
+    - brew update
+    - brew install xctool
+script: xctool -workspace Catch.xcworkspace -scheme Catch test
