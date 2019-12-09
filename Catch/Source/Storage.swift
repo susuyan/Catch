@@ -68,7 +68,6 @@ public enum StorageExpiration {
     }
 }
 
-
 /// Represents the expiration extending strategy used in storage to after access.
 ///
 /// - none: The item expires after the original time, without extending after access.
@@ -94,3 +93,4 @@ public protocol DataTransformable {
     static func fromData(_ data: Data) throws -> Self
     static var empty: Self { get }
 }
+

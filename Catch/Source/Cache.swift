@@ -41,15 +41,26 @@ public struct CacheStoreResult {
     public let diskCacheResult: Result<(), CacheError>
 }
 
+
+
 open class Cache {
     
     public static let `default` = Cache()
     
-    private let ioQueue: DispatchQueue?
+    public let memoryStorage: MemoryStorage.Backend<KFCrossPlatformImage>
     
-    init() {
-        let ioQueueName = "com.onevcat.Kingfisher.objectCache.ioQueue.\(UUID().uuidString)"
-        ioQueue = DispatchQueue(label: ioQueueName)
+    public let diskStorage: DiskStorage.Backend<Data>
+    
+    private let ioQueue: DispatchQueue
+    
+    /// Closure that defines the disk cache path from a given path and cacheName.
+    public typealias DiskCachePathClosure = (URL, String) -> URL
+    
+    
+    public init(memoryStorage: MemoryStorage.Backend<KFCrossPlatformImage>,
+                diskStorage: DiskStorage.Backend<Data>) {
+        
+        
     }
   
 }
